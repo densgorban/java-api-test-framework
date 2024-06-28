@@ -5,34 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918285a2-54ac-4217-b6e3-5663ee8c3292" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dens/api/ApiBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dens/config/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dens/config/ConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dens/dto/BaseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dens/dto/ProductsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/dens/annotations/DataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/dens/annotations/Regression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/dens/annotations/Smoke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/dens/e2e/CurrencyApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/dens/utils/CsvToDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/dens/utils/DataArgumentsProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/currency.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dens/api/ApiBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dens/api/ApiBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dens/dto/ProductsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dens/dto/CurrencyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/dens/e2e/CurrencyApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/dens/e2e/CurrencyApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +22,16 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -53,6 +41,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -74,20 +63,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/work/java/ExabeamFramework",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "last_opened_file_path": "D:/work/java/otakoyi-test-task/src/main/java/io/github/dens/utils",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\java\otakoyi-test-task\src\main\java\io\github\dens\utils" />
       <recent name="D:\work\java\otakoyi-test-task\src\test\resources" />
       <recent name="D:\work\java\otakoyi-test-task\src\main\java\org\dens" />
       <recent name="D:\work\java\otakoyi-test-task\src\test\java\io\github\dens\utils" />
       <recent name="D:\work\java\otakoyi-test-task\src\test\java\io\github\dens" />
-      <recent name="D:\work\java\otakoyi-test-task" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CurrencyApiTest">
+  <component name="RunManager" selected="Gradle.CurrencyApiTest.getCurrencyTest (1)">
     <configuration name="CurrencyApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,10 +149,23 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="otakoyi-test-task" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="otakoyi-test-task" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CurrencyApiTest" />
         <item itemvalue="Gradle.CurrencyApiTest.getCurrencyTest (1)" />
+        <item itemvalue="Gradle.CurrencyApiTest" />
         <item itemvalue="Gradle.CurrencyApiTest.getCurrencyTest" />
       </list>
     </recent_temporary>

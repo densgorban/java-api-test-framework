@@ -4,12 +4,9 @@ import com.univocity.parsers.annotations.Parsed;
 import lombok.Getter;
 import lombok.ToString;
 
-/**
- * @author dens.gorban
- */
 @Getter
 @ToString(callSuper = true)
-public final class ProductsDto extends BaseDto {
+public final class CurrencyDto extends BaseDto {
 
     @Parsed(field = "URL", defaultNullRead = "")
     private String url;

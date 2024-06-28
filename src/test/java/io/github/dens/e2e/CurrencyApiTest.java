@@ -23,7 +23,7 @@ public class CurrencyApiTest {
 
         Response response = ApiBase.api().when().get("/USD");
 
-        response.then().statusCode(200);
+        response.then().statusCode(201);
 
     }
 }
