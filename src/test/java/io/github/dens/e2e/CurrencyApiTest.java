@@ -8,6 +8,8 @@ import io.restassured.response.Response;
 import io.github.dens.api.ApiBase;
 import org.junit.jupiter.api.Test;
 
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+
 /**
  * @author dens.gorban
  */
@@ -23,7 +25,12 @@ public class CurrencyApiTest {
 
         Response response = ApiBase.api().when().get("/USD");
 
-        response.then().statusCode(201);
+        response.then()
+                .statusCode(200)
+                .assertThat().body(matchesJsonSchemaInClasspath("schema/currency-schema.json"));
+        ;
+
+
 
     }
 }

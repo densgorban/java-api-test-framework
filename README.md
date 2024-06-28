@@ -25,7 +25,7 @@
 > - Fetch the USD price against the AED and make sure the prices are in range on 3.6 – 3.7
 > - Make sure API response Ɵme is not less then 3 seconds then current Ɵme in second.
 >   - Timestamp is returned in the API response.
-> - Verify that 162 currency pairs are retuned by the API.
+> - Verify that 162 currency pairs are returned by the API.
 > - Make sure API response matches the Json schema
 >   - Generate a schema from the API response.
 
