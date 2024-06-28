@@ -1,27 +1,33 @@
 # Otakoyi Technical task using Java and RestAssured
 
-Given the API: https://open.er-api.com/v6/latest/USD
-Returns the USD rates against mulƟple currency.
-## Task
-- Create a test framework using Java/JVM language framework.
-  - BDD approach would be an added advantage.
-- Write necessary tests to cover the acceptance criteria below.
-- Make sure code is modular and easily understood.
-- Structure the code properly so that we making changes are easier.
-- Upload the solution in bitbucket/GitHub and share the link of the repo
-- Include a README.md file.
+> Given the API: https://open.er-api.com/v6/latest/USD
+> Returns the USD rates against multiple currency.
 
-Acceptance criteria
-- API call is successful and returns valid price.
-- Check the status code and status is returned by the API response.
-  - API could return multiple statuses like SUCCESS, FAILURE etc. Make sure this is
-  catered for.
-- Fetch the USD price against the AED and make sure the prices are in range on 3.6 – 3.7
-- Make sure API response Ɵme is not less then 3 seconds then current Ɵme in second.
-  - Timestamp is returned in the API response.
-- Verify that 162 currency pairs are retuned by the API.
-- Make sure API response matches the Json schema
-  - Generate a schema from the API response.
+> #### Task
+> 
+> - Create a test framework using Java/JVM language framework.
+>   ***BDD approach would be an added advantage.***
+> 
+> - Write necessary tests to cover the acceptance criteria below. 
+> 
+> - Make sure code is modular and easily understood.
+> 
+> - Structure the code properly so that we can make changes easier.
+> 
+> - Upload the solution in bitbucket/GitHub and share the link of the repo
+> - Include a README.md file.
+
+> #### Acceptance criteria
+> - API call is successful and returns valid price.
+> - Check the status code and status is returned by the API response.
+>   - API could return multiple statuses like SUCCESS, FAILURE etc. Make sure this is
+    catered for.
+> - Fetch the USD price against the AED and make sure the prices are in range on 3.6 – 3.7
+> - Make sure API response Ɵme is not less then 3 seconds then current Ɵme in second.
+>   - Timestamp is returned in the API response.
+> - Verify that 162 currency pairs are retuned by the API.
+> - Make sure API response matches the Json schema
+>   - Generate a schema from the API response.
 
 ## Features
 
@@ -89,7 +95,7 @@ The project is structured as follows:
    │  └─ java
    │     └─ io
    │        └─ github
-   │           └─ tahanima
+   │           └─ dens
    │              ├─ config
    │              │  ├─ Configuration.java
    │              │  └─ ConfigurationManager.java
@@ -108,7 +114,7 @@ The project is structured as follows:
       ├─ java
       │  └─ io
       │     └─ github
-      │        └─ tahanima
+      │        └─ dens
       │           ├─ annotation
       │           │  ├─ DataSource.java
       │           │  ├─ Regression.java
@@ -191,12 +197,12 @@ The project is structured as follows:
    ```
    Note that the class extends from BaseDto and thus, inherits the attribute `Test Case ID`.
 
-   Now, in the [*testdata*](./src/test/resources/testdata) folder you can add a csv file `user.csv` for `User` with the below contents and use it in your tests.
+   Now, in the [*testdata*](./src/test/resources/testdata) folder you can add a csv file `currency.csv` for `USD` with the below contents and use it in your tests.
    ```
    Test Case ID,First Name,Last Name
    TC-1,Tahanima,Chowdhury
    ```
-   For reference, check [this](./src/main/java/io/github/dens/dto/LoginDto.java), [this](./src/test/resources/testdata/login.csv) and [this](./src/test/java/io/github/dens/e2e/LoginTest.java).
+   For reference, check [this](./src/main/java/io/github/dens/dto/CurrencyDto.java)
 
 - ### Page Objects and Page Component Objects
   The project uses [*Page Objects* and *Page Component Objects*](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/) to capture the relevant behaviors of a web page. Check the [*ui*](./src/main/java/io/github/dens/ui) package for reference.
