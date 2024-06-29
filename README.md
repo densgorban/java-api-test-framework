@@ -23,7 +23,7 @@
 >   - API could return multiple statuses like SUCCESS, FAILURE etc. Make sure this is
     catered for.
 > - Fetch the USD price against the AED and make sure the prices are in range on 3.6 – 3.7
-> - Make sure API response Ɵme is not less then 3 seconds then current Ɵme in second.
+> - Make sure API response time is not less then 3 seconds then current Ɵme in second.
 >   - Timestamp is returned in the API response.
 > - Verify that 162 currency pairs are returned by the API.
 > - Make sure API response matches the Json schema
@@ -46,14 +46,12 @@ In order to use the framework:
 ```
 git clone https://github.com/densgorban/playwright-java.git
 ```
-3. Import the project in [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
-4. Make your desired changes.
-5. Use IntelliJ IDEA to run your desired tests. Alternatively, you can use the terminal to run the tests, for example 
-```./gradlew test -Dbrowser=firefox -Dheadless=false```
-6. Build and browse the allure report using
-```
-./gradlew allureServe
-```
+2. Import the project in [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
+3. Make your desired changes.
+4. Use IntelliJ IDEA to run your desired tests. Alternatively, you can use the terminal to run the tests, for example 
+```./gradlew test -Dtag=Smoke```
+5. Build and browse the allure report using
+```./gradlew allureServe```
 
 ## Languages and Frameworks
 
@@ -170,42 +168,3 @@ The project is structured as follows:
       ```bash
       ./gradlew test -Dkey1=value1 -Dkey2=value2
       ```
-      
-- ### Test Data
-  The project uses *csv* file to store test data and [*univocity-parsers*](https://github.com/uniVocity/univocity-parsers) to retrieve the data and map it to a Java bean.
-
-  To add configurations for new test data, add a new Java bean in the [*dto*](./src/main/java/io/github/dens/dto) package. For example, let's say I want to add test data for a `User` with the attributes `First Name` and `Last Name`. The code for this is as follows:
-
-   ```java
-   package io.github.dens.dto;
-
-   import com.univocity.parsers.annotations.Parsed;
-
-   import lombok.Getter;
-   import lombok.ToString;
-
-   @Getter
-   @ToString(callSuper = true)
-   public class UserDto extends BaseDto {
-
-       @Parsed(field = "First Name", defaultNullRead = "")
-       private String firstName;
-
-       @Parsed(field = "Last Name", defaultNullRead = "")
-       private String lastName;
-   }
-   ```
-   Note that the class extends from BaseDto and thus, inherits the attribute `Test Case ID`.
-
-   Now, in the [*testdata*](./src/test/resources/testdata) folder you can add a csv file `currency.csv` for `USD` with the below contents and use it in your tests.
-   ```
-   Test Case ID,First Name,Last Name
-   TC-1,Tahanima,Chowdhury
-   ```
-   For reference, check [this](./src/main/java/io/github/dens/dto/CurrencyDto.java)
-
-- ### Page Objects and Page Component Objects
-  The project uses [*Page Objects* and *Page Component Objects*](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/) to capture the relevant behaviors of a web page. Check the [*ui*](./src/main/java/io/github/dens/ui) package for reference.
-
-- ### Tests
-  The project uses *JUnit 5* as the test runner. Check [this implementation](./src/test/java/io/github/dens/e2e/LoginTest.java) for reference.
